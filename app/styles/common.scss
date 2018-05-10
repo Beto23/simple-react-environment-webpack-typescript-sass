@@ -1,0 +1,24 @@
+@import './_vendor/reset.scss';
+
+:root {
+    --mainColor: red;
+    --whiteColor: rgb(255, 255, 255);
+}
+
+body {
+    background-color: var(--mainColor);
+    background: url('./assets/images/pexels.jpeg');
+    background-size: cover;
+    margin: 0;
+    position: relative;
+    height: 100vh;
+}
+.title {
+    color: var(--whiteColor);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+    margin: 0;
+}
