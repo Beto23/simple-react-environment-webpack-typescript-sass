@@ -1,12 +1,12 @@
 import * as React from "react";
-import { render } from 'react-dom';
+import { render } from "react-dom";
 
-//common styles
-import './styles/common.scss';
+// common styles
+import "./styles/common.scss";
 
-export default class App extends React.Component {
+export default class App extends React.Component<{}, any> {
 
-    render() {
+    public render() {
         return (
             <h1 className="title">Hello React</h1>
         );
@@ -15,6 +15,6 @@ export default class App extends React.Component {
 
 render((
     <App />
-), document.getElementById('app'))
+), document.getElementById("app"));
 
 module.hot.accept();

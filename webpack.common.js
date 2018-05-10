@@ -23,6 +23,9 @@ module.exports = {
                     },
                     {
                         loader: 'ts-loader'
+                    },
+                    {
+                        loader: 'tslint-loader'
                     }
                 ],
                 exclude: /node_modules/
