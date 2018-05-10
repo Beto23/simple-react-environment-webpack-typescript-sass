@@ -1,5 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
+const TSLintPlugin = require('tslint-webpack-plugin');
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
@@ -54,6 +55,9 @@ module.exports = {
             filename: 'index.html',
         }),
         new webpack.HotModuleReplacementPlugin(),
+        new TSLintPlugin({
+            files: ['./app/**/*.ts', './app/**/*.tsx']
+        })
     ],
     resolve: {
         extensions: [ '.tsx', '.ts', '.js' ]
