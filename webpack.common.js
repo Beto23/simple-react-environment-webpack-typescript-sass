@@ -33,7 +33,7 @@ module.exports = {
             },
             {
                 test: /\.svg(\?.*)?$/,
-                use: 'url-loader?limit=10000&mimetype=image/svg+xml&name=fonts/[hash].[ext]'
+                use: 'url-loader?limit=10000&mimetype=image/svg+xml&name=images/[hash].[ext]'
             },
             {
                 test: /\.pdf(\?.*)?$/,
